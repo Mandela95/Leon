@@ -1,17 +1,20 @@
+/* Start Variables */
+
 :root {
   --main-color: #10cab7;
   --secondary-color: #2c4755;
   --section-padding: 60px;
   --section-background: #f6f6f6;
-  --main-duration: 0.3s;
-}* {
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -24,21 +27,35 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
+/* Small */
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
+
+/* Medium */
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
+
+/* Large */
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
 }
+
+/* End Global Rules */
+
+/* Start Components */
+
 .special-heading {
   text-align: center;
   font-size: 100px;
@@ -64,6 +81,11 @@ body {
     margin-top: -20px;
   }
 }
+
+/* End Components */
+
+/* Start Header */
+
 .header {
   padding: 20px;
 }
@@ -76,7 +98,10 @@ body {
 
 .header .logo {
   width: 100px;
-  cursor: pointer;}
+  cursor: pointer;
+  /* من عندى */
+}
+
 .header .links {
   position: relative;
 }
@@ -89,7 +114,10 @@ body {
   width: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;}
+  justify-content: flex-end;
+  /* عشان الشرطة اللى فى النص تيجي يمين */
+}
+
 .header .links .icon span {
   background-color: #333;
   margin-bottom: 5px;
@@ -102,7 +130,7 @@ body {
 
 .header .links .icon span:nth-child(2) {
   width: 60%;
-  transition: var(--main-duration);
+  transition: 0.3s;
 }
 
 .header .links .icon span:last-child {
@@ -140,8 +168,10 @@ body {
   padding: 15px;
   text-decoration: none;
   color: var(--main-color);
-  font-weight: bold;  transition: var(--main-duration);
-
+  font-weight: bold;
+  /* color & fw from me */
+  transition: 0.3s;
+}
 
 .header .links ul a:hover {
   padding-left: 25px;
@@ -150,7 +180,13 @@ body {
 .header .links ul li:not(:last-child) a {
   border-bottom: 1px solid #ccc;
 }
-.landing {  background-image: url(../images/landing.jpg);
+
+/* End Header */
+
+/* Start Landing Section */
+
+.landing {
+  background-image: url(../images/landing.jpg);
   background-size: cover;
   height: calc(100vh - 80px);
   position: relative;
@@ -177,6 +213,11 @@ body {
   font-size: 19px;
   line-height: 1.8;
 }
+
+/* End Landing Section */
+
+/* Start Features */
+
 .features {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
@@ -207,7 +248,11 @@ body {
   color: #777;
   font-size: 17px;
 }
-services {
+/* End Features */
+
+/* Start Services */
+
+.services {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
@@ -228,8 +273,10 @@ services {
   .services .services-content .srv {
     flex-direction: column;
     text-align: center;
-    height: 220px;  }
-
+    height: 220px;
+    /* من عندى */
+  }
+}
 
 .services .services-content .srv i {
   color: var(--main-color);
@@ -275,7 +322,11 @@ services {
     display: none;
   }
 }
-portfolio {
+/* End Services */
+
+/* Start portfolio */
+
+.portfolio {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
   background-color: var(--section-background);
@@ -314,8 +365,12 @@ portfolio {
   color: #777;
   line-height: 1.6;
   margin-bottom: 0;
-}.about {
- padding-top: var(--section-padding);
+}
+/* End portfolio */
+
+/* Start About */
+.about {
+  padding-top: var(--section-padding);
   padding-bottom: calc(var(--section-padding) + 60px);
 }
 
@@ -397,8 +452,12 @@ portfolio {
 .about .about-content .text p:last-of-type {
   line-height: 2;
   color: #777;
-}.contact {
- padding-top: var(--section-padding);
+}
+/* End About */
+
+/* Start Contact */
+.contact {
+  padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
   background-color: var(--section-background);
 }
@@ -440,8 +499,11 @@ portfolio {
   .contact .info .link {
     font-size: 20px;
   }
-}.footer {
- background-color: var(--secondary-color);
+}
+/* End Contact */
+/* Start Footer */
+.footer {
+  background-color: var(--secondary-color);
   color: white;
   padding: 20px;
   text-align: center;
@@ -452,3 +514,5 @@ portfolio {
   color: var(--main-color);
   font-weight: bold;
 }
+
+/* End Footer */
