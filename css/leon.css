@@ -1,16 +1,16 @@
 /* Start Variables */
-
 :root {
   --main-color: #10cab7;
   --secondary-color: #2c4755;
   --section-padding: 60px;
   --section-background: #f6f6f6;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* End Variables */
 
 /* Start Global Rules */
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -29,7 +29,6 @@ body {
 }
 
 /* Small */
-
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -37,7 +36,6 @@ body {
 }
 
 /* Medium */
-
 @media (min-width: 992px) {
   .container {
     width: 970px;
@@ -45,17 +43,14 @@ body {
 }
 
 /* Large */
-
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
 }
-
 /* End Global Rules */
 
 /* Start Components */
-
 .special-heading {
   text-align: center;
   font-size: 100px;
@@ -81,11 +76,9 @@ body {
     margin-top: -20px;
   }
 }
-
 /* End Components */
 
 /* Start Header */
-
 .header {
   padding: 20px;
 }
