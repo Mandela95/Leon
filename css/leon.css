@@ -336,6 +336,11 @@ body {
   background-color: white;
 }
 
+.portfolio .portfolio-content .card:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
 .portfolio .portfolio-content .card img {
   max-width: 100%;
 }
