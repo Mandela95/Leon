@@ -498,6 +498,15 @@ body {
   cursor: pointer;
   transform: scale(1.5)
 }
+.contact .info i.fab.fa-facebook:hover {
+    color: blue;
+}
+.contact .info i.fab.fa-youtube:hover {
+    color: red;
+}
+.contact .info i.fab.fa-twitter:hover {
+    color: #1da1f2;
+}
 @media (max-width: 767px) {
   .contact .info .label,
   .contact .info .link {
